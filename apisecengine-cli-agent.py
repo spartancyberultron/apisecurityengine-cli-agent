@@ -15,7 +15,7 @@ def send_to_api(api_key, data, is_request):
     
     try:
         response = requests.post(
-                'http://localhost:5001/api/v1/mirroredScans/sendRequestInfo',
+                'https://backend-new.apisecurityengine.com/api/v1/mirroredScans/sendRequestInfo',
             json=payload
         )
         response.raise_for_status()
